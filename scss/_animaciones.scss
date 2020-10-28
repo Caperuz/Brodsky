@@ -1,0 +1,23 @@
+.photo-miguel img{
+    display: block;
+    opacity: 0;
+    transform: scale(0);
+    -webkit-box-shadow: -2px -1px 39px 14px rgba(0,0,0,0.16);
+    -moz-box-shadow: -2px -1px 39px 14px rgba(0,0,0,0.16);
+    box-shadow: -2px -1px 39px 14px rgba(0,0,0,0.16);
+    border-radius: 50%;
+    border: 10px solid #d9532f;
+
+    &.animate {
+        animation: appear 2s forwards;
+    }
+    @keyframes appear {
+        to {
+            opacity: 1;
+            transform: scale(1);
+            overflow:hidden;
+            border-radius: 50%;
+           
+        }
+    }
+}
